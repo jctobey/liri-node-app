@@ -2,7 +2,7 @@
   "name": "liri-node-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "keys.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/jctobey/liri-node-app/issues"
   },
-  "homepage": "https://github.com/jctobey/liri-node-app#readme"
+  "homepage": "https://github.com/jctobey/liri-node-app#readme",
+  "dependencies": {
+    "bandsintown": "^1.0.1",
+    "dotenv": "^6.1.0",
+    "moment": "^2.22.2",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.88.0"
+  }
 }
