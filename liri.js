@@ -21,6 +21,17 @@ if (arguments.length === 0) {
     console.log("\r\n");
     console.log("do-what-it-says");
 }
+else if(arguments[0] !=="concert-this" || arguments[0] !=="movie-this" || arguments[0] !=="spotify-this-song"){
+    console.log("Not a recognized command. Please try again.The commands you can choose from are:");
+    console.log("\r\n");
+    console.log("concert-this '<artist/band name here>'");
+    console.log("\r\n");
+    console.log("spotify-this-song '<song name here>'");
+    console.log("\r\n");
+    console.log("movie-this '<movie name here>'");
+    console.log("\r\n");
+    console.log("do-what-it-says");
+}
 else if (arguments[0] === "concert-this") {
     for (var i = 1; i < arguments.length; i++) {
 
