@@ -3,7 +3,7 @@ var request = require("request");
 var Spotify = require("node-spotify-api")
 const keys = require("./keys.js");
 const util = require('util')
-var bandsintown = require('bandsintown')("codingbootcamp")
+var bandsintown = require('bandsintown')('codingbootcamp')
 var spotify = new Spotify(keys.spotify);
 var moment = require('moment');
 moment().format();
@@ -39,7 +39,8 @@ else if (arguments[0] === "concert-this") {
 
     bandsintown
         .getArtistEventList(artist)
-        .then(function (error, response, body) {
+        .then(function (response) {
+            
             if (response.length === 0) { console.log("No upcoming dates for this artist. Sorry! Maybe check another artist?") }
             else {
                 console.log("\n" + "Concert Information for " + artist + '\n')
@@ -49,6 +50,7 @@ else if (arguments[0] === "concert-this") {
                 })
             }
         })
+        .catch(err => console.log(err))
 
 
 }
