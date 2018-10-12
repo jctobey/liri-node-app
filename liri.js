@@ -21,7 +21,7 @@ if (arguments.length === 0) {
     console.log("\r\n");
     console.log("do-what-it-says");
 }
-else if(arguments[0] !=="concert-this" || arguments[0] !=="movie-this" || arguments[0] !=="spotify-this-song"){
+else if(arguments[0] !=="concert-this" && arguments[0] !=="movie-this" && arguments[0] !=="spotify-this-song" && arguments[0] !=="do-what-it-says" ){
     console.log("Not a recognized command. Please try again.The commands you can choose from are:");
     console.log("\r\n");
     console.log("concert-this '<artist/band name here>'");
